@@ -1,0 +1,104 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Lato-Regular";
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-fluid {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@media (max-width: 720) {
+  .container-fluid {
+    padding: 0 15px;
+  }
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.title {
+  font-family: "Lato-Heavy";
+  font-size: 36px;
+  line-height: 60px;
+  text-align: center;
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato-Heavy";
+  src: url("../fonts/Lato-Heavy.woff2"), url("../fonts/Lato-Heavy.woff2");
+  ont-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato-Medium";
+  src: url("../fonts/Lato-Medium.woff2"), url("../fonts/Lato-Medium.woff2");
+  ont-weight: normal;
+  font-style: normal;
+}
+.header {
+  background-color: #f95157;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0px 90px;
+}
+.header__menu li {
+  display: inline-block;
+}
+.header__menu li a {
+  font-family: "Lato-Medium";
+  font-size: 16px;
+}
+.header__menu li + li {
+  margin-left: 50px;
+}

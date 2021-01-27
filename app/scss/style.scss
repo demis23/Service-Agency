@@ -1,0 +1,29 @@
+@import 'vars';
+@import 'global';
+@import 'fonts';
+
+
+
+.header {
+    background-color: $red;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 0px 90px;
+    }
+    
+    
+    &__menu {
+        
+        li {
+            display: inline-block;
+            a{
+                font-family: "Lato-Medium";
+                font-size: 16px;
+            }
+            & + li {
+                margin-left: 50px;
+            }
+        }
+    }
+}
